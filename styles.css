@@ -1,0 +1,13 @@
+:root {
+  --primary: #030164;
+  --secondary: #363199;
+  --accent: #2D7495;
+  --text: #E8E085;
+}
+
+body {
+  background-color: var(--primary);
+  font-size: 100%;
+  color: var(--text);
+  font-family: "Open Sans", sans-serif;
+}
