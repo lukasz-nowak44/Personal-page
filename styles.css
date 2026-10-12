@@ -12,11 +12,20 @@
 body {
   background-color: var(--secondary);
   font-size: 100%;
+  line-height: 1.5;
   color: var(--text);
   font-family: "Open Sans", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.cointainer {
+  width: 100%;
+}
+
+.hero {
+  margin: 10rem;
 }
 
 .my-photo {
@@ -38,7 +47,22 @@ nav a {
   color: var(--primary);
 }
 
+article, aside {
+  margin: 10rem 0;
+  padding: 3rem;
+}
+
+.education, .skills {
+  background-color: var(--primary);
+}
+
 .interests img {
   width: 100%;
   height: auto;
 }
+
+footer {
+  background-color: var(--primary);
+  width: 100%;
+}
+
