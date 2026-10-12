@@ -15,12 +15,16 @@ body {
   line-height: 1.5;
   color: var(--text);
   font-family: "Open Sans", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0;
 }
 
 .cointainer {
+  background-color: var(--secondary);
+  color: var(--text);
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
 }
 
