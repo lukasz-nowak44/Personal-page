@@ -5,9 +5,40 @@
   --text: #E8E085;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: var(--primary);
+  background-color: var(--secondary);
   font-size: 100%;
   color: var(--text);
   font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-photo {
+  max-height: 15rem;
+  float: left;
+}
+
+.hero-text {
+  max-width: 60ch;
+}
+
+nav {
+  height: 100dvh;
+  background-color: var(--accent);
+  
+}
+
+nav a {
+  color: var(--primary);
+}
+
+.interests img {
+  width: 100%;
+  height: auto;
 }
