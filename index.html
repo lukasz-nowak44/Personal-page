@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="assets/fontello-fb96b91e/css/fontello.css" />
   <link rel="stylesheet" href="styles.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
 
@@ -36,11 +37,12 @@
 
         <ul class="navbar-nav">
 
-          <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Work Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education-header">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience-header">Work Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills-header">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#interests-header">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact-header">Contact</a></li>
 
         </ul>
       </nav>
@@ -49,7 +51,7 @@
 
         <article class="education">
 
-            <h2>Education</h2>
+            <h2 id="education-header">Education</h2>
             <ul>
 
               <li>10/2022 - 06/2023:    University of Medical Sciences in Poznań <br />  
@@ -71,7 +73,7 @@
 
         <article class="work-experience">
 
-          <h2>Work Experience</h2>
+          <h2 id="experience-header">Work Experience</h2>
 
           <ul>
 
@@ -111,7 +113,7 @@
 
         <article class="skills">
 
-          <h2>Skills</h2>
+          <h2 id="skills-header">Skills</h2>
 
           <ul>
             <li>Foreign Languagues: English intermediate</li>
@@ -121,38 +123,50 @@
             <li>Experience in ERP system using (Infor LN)</li>
           </ul>
 
+          <strong class="d-flex my-10">At this moment I attend in complex programming course from "Przyszły Programista AI" project. During this course I'm learning some programming languagues and web technologies. If you want to check my projects please visit my profile on these webpages: </strong>
+
+          <div class="d-flex justify-content-around">
+
+              <div class="portal"><a href="https://github.com/lukasz-nowak44" target="_blank""><i class="icon-github-circled"></i></a></div>
+
+              <div class="portal"><a href="https://pl.spoj.com/users/lowca7/" target="_blank""><img src="assets/icons/Spoj--Streamline-Simple-Icons.svg" alt="" /></a></div>
+
+              <div class="portal"><a href="https://www.frontendmentor.io/profile/lukasz-nowak44" target="_blank""><img src="assets/icons/frontendmentor-dark.svg" alt="" /></a></div>
+
+          </div>
+
         </article>
 
         <aside class="container about-me">
 
           <div class="row interests">
 
-          <h2>About Me</h2>
+            <h2 id="interests-header">About Me</h2>
 
-          <p>I certainly have plenty to do in my free time. My interest are: </p>
+            <p>I certainly have plenty to do in my free time. My interest are: </p>
 
-            <div class="col-4">
+            <div class="col-6">
               <figure>
-              <img src="assets/triglav.jpg" alt="Me on the top of Triglav" />
+              <img src="./assets/mountains.jpg" alt="the photo from mountain" />
               </figure>
               <figcaption>Trekking in mountains</figcaption>
             </div>
 
-            <div class="col-4">
+            <div class="col-6">
               <figure>
-              <img src="assets/aqua.jpg" alt="small aquarium with green plants, small Bali's lion monument and temple ruins" /> 
+              <img src="assets/aqua.jpg" alt="small aquarium with green plants" /> 
               </figure>
               <figcaption>Aquaristics</figcaption>
             </div>
 
-            <div class="col-4">
+            <div class="col-6">
               <figure>
               <img src="assets/snowboard.jpg" alt="Me on snowboard" />
               </figure>
               <figcaption>Snowboarding and skiing </figcaption>
             </div>
 
-            <div class="col-4">
+            <div class="col-6">
               <figure>
               <img src="assets/moon.jpg" alt="The moon photo made with telescope help" /> 
               </figure>
@@ -168,19 +182,18 @@
       <footer class="d-flex justify-content-between z-drawer p-5">
         
         <div class="data">
-          <h3>Contact with me:</h3>
+          <h3 id="contact-header">Contact with me:</h3>
 
           <p>
             adress: ul. Bursztynowa 4, 62-200 Gniezno<br />
             phone number: +48 663 356 626 <br />
-            e-mail adress: lukasz.nowak.programista@gmail.com <br />
+            <i class=" icon-mail"></i> adress: lukasz.nowak.programista@gmail.com <br />
           </p>
 
         </div>
 
-        <div class="linkedin">Linkedin</div>
+        <div class="linkedin"><a href="https://www.linkedin.com/in/%C5%82ukasz-nowak-06ba142a3/?isSelfProfile=true" target="_blank""><i class="icon-linkedin-squared"></i></a></div>
 
-        <div class="github">Github</div>
 
       </footer>
 

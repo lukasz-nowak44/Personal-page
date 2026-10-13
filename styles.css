@@ -9,6 +9,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   background-color: var(--secondary);
   font-size: 100%;
@@ -18,7 +19,7 @@ body {
   margin: 0;
 }
 
-.cointainer {
+.cointainer-fluid {
   background-color: var(--secondary);
   color: var(--text);
   font-family: "Open Sans", sans-serif;
@@ -26,6 +27,11 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+h2 {
+  font-weight: 700;
+  padding: 2rem 0;
 }
 
 .hero {
@@ -58,6 +64,14 @@ article, aside {
 
 .education, .skills {
   background-color: var(--primary);
+}
+
+.skills img {
+  height: 4rem;
+}
+
+.portal {
+  padding: 2rem;
 }
 
 .interests img {
