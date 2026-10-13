@@ -9,6 +9,23 @@
   box-sizing: border-box;
 }
 
+ul li::marker {
+  content: "➥ ";
+  color: var(--text);
+}
+
+ul li ul li::marker {
+  content: "✓ ";
+  color: var(--text);
+}
+
+li {
+  padding-bottom: 1.2rem;
+}
+
+li ul li {
+  padding-bottom: 0.2rem;
+}
 
 body {
   background-color: var(--secondary);
@@ -19,7 +36,7 @@ body {
   margin: 0;
 }
 
-.cointainer-fluid {
+.cointainer {
   background-color: var(--secondary);
   color: var(--text);
   font-family: "Open Sans", sans-serif;
@@ -31,7 +48,7 @@ body {
 
 h2 {
   font-weight: 700;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
 
 .hero {
@@ -66,6 +83,11 @@ article, aside {
   background-color: var(--primary);
 }
 
+.skills-list {
+  padding-bottom: 3rem;
+  border-bottom: 2px dashed var(--text);
+}
+
 .skills img {
   height: 4rem;
 }
@@ -77,6 +99,10 @@ article, aside {
 .interests img {
   width: 100%;
   height: auto;
+}
+
+figcaption {
+  padding-bottom: 1rem;
 }
 
 footer {
