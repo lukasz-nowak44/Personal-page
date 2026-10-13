@@ -58,6 +58,7 @@ h2 {
 
 .hero {
   margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .my-photo {
@@ -141,6 +142,7 @@ a:focus-visible {
 
   .hero {
     margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   h1 {
