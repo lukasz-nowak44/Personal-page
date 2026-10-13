@@ -1,0 +1,173 @@
+:root {
+  --primary: #030164;
+  --secondary: #363199;
+  --accent: #2D7495;
+  --text: #E8E085;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+ul li::marker {
+  content: "➥ ";
+  color: var(--text);
+}
+
+ul li ul li::marker {
+  content: "✓ ";
+  color: var(--text);
+}
+
+li {
+  padding-bottom: 1.2rem;
+}
+
+li ul li {
+  padding-bottom: 0.2rem;
+}
+
+body {
+  background-color: var(--secondary);
+  font-size: 100%;
+  line-height: 1.5;
+  color: var(--text);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+.cointainer {
+  background-color: var(--secondary);
+  color: var(--text);
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+
+h2 {
+  font-weight: 700;
+  padding: 1rem 0;
+}
+
+.hero {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.my-photo {
+  max-height: 15rem;
+}
+
+.hero-text {
+  max-width: 40ch;
+  font-size: 1.5rem;
+}
+
+nav {
+  height: 100dvh;
+  background-color: var(--accent);
+  
+}
+
+.nav-link {
+  color: var(--primary);
+}
+
+.nav-link.active, .nav-link:hover, .nav-link:focus-visible {
+  background-color: var(--primary); 
+  color: var(--text);
+}
+
+article, aside {
+  margin: 10rem 0;
+  padding: 3rem;
+}
+
+.education, .skills {
+  background-color: var(--primary);
+}
+
+.skills-list {
+  padding-bottom: 3rem;
+  border-bottom: 2px dashed var(--text);
+}
+
+.skills img {
+  height: 4rem;
+}
+
+.portal {
+  padding: 2rem;
+}
+
+.portal a {
+  display: flex;
+  justify-content: center;
+}
+
+.portal a:hover {
+  background-color: var(--secondary);
+  outline: 3px solid var(--secondary);
+  outline-offset: 3px;
+}
+
+.interests img {
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  padding-bottom: 1rem;
+}
+
+footer {
+  background-color: var(--primary);
+  width: 100%;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--text);
+  outline-offset: 3px;
+}
+
+@media (max-width: 36rem) {
+
+  body {
+    font-size: 0.7rem;
+  }
+
+  .hero {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+   font-size: 0.8rem;
+   width: 30ch;
+  }
+
+  .my-photo {
+  max-height: 10rem;
+  }
+
+  article, aside {
+    margin: 5rem 0;
+    padding: 1rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+
+}
