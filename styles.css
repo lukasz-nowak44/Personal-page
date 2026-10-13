@@ -46,13 +46,18 @@ body {
   width: 100%;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+
 h2 {
   font-weight: 700;
   padding: 1rem 0;
 }
 
 .hero {
-  margin: 10rem;
+  margin-top: 10rem;
 }
 
 .my-photo {
@@ -61,7 +66,8 @@ h2 {
 }
 
 .hero-text {
-  max-width: 60ch;
+  max-width: 40ch;
+  font-size: 1.5rem;
 }
 
 nav {
@@ -70,8 +76,13 @@ nav {
   
 }
 
-nav a {
+.nav-link {
   color: var(--primary);
+}
+
+.nav-link.active, .nav-link:hover, .nav-link:focus-visible {
+  background-color: var(--primary); 
+  color: var(--text);
 }
 
 article, aside {
@@ -96,6 +107,17 @@ article, aside {
   padding: 2rem;
 }
 
+.portal a {
+  display: flex;
+  justify-content: center;
+}
+
+.portal a:hover {
+  background-color: var(--secondary);
+  outline: 3px solid var(--secondary);
+  outline-offset: 3px;
+}
+
 .interests img {
   width: 100%;
   height: auto;
@@ -110,3 +132,27 @@ footer {
   width: 100%;
 }
 
+a:focus-visible {
+  outline: 3px solid var(--text);
+  outline-offset: 3px;
+}
+
+@media (max-width: 36rem) {
+
+  .hero {
+    margin-top: 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+   font-size: 1rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
+
+}
