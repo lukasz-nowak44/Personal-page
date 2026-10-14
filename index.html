@@ -21,33 +21,45 @@
 
     <div class="row">
 
-      <div class="hero offset-2 col-10 align-center d-grid lg:grid-cols-2 place-items-center gap-5">
+      <div class="hero offset-3 md:offset-2 col-9 md:col-10 align-center d-grid lg:grid-cols-2 place-items-center gap-5">
 
-        <header class="grid-cols-fill">
-          <h1 class="text-center">Welcome on my page! I'm <strong>Łukasz Nowak</strong></h1>
+        <header class="grid-cols-fill" id="home">
+          <h1 class="text-center mb-8">Welcome on my page! I'm <strong>Łukasz Nowak</strong></h1>
         </header>
 
         <img class="img-fluid my-photo mb-5"  src="assets/myPhoto.jpeg" alt="" />
 
-        <p class="hero-text lg:me-8"> I am the chemist, who gained the experience in logistic, then in team management. Over the last two years my profession was organization work in one logistic departament. During this time I improved a lot of things in our work. At this moment of my life I would like to try new challanges as developer. </p>
+        <p class="hero-text p-5 lg:me-8"> I am the chemist, who gained the experience in logistic, then in team management. Over the last two years my profession was organization work in one logistic departament. During this time I improved a lot of things in our work. At this moment of my life I would like to try new challanges as developer. </p>
 
       </div>
   
-      <nav class="navbar nav md:navbar-expand col-2 fixed-top">
+      <nav class="navbar nav col-3 md:col-2 fixed-top">
 
         <ul class="nav d-flex flex-column">
 
-          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education-header">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience-header">Work Experience</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills-header">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#interests-header">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact-header">Contact</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education-header">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience-header">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills-header">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#interests-header">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact-header">Contact</a>
+          </li>
 
         </ul>
       </nav>
 
-      <main class="col-10 offset-2">
+      <main class="col-9 md:col-10 offset-3 md:offset-2">
 
         <article class="education">
 
@@ -127,11 +139,11 @@
 
           <div class= "d-flex flex-column md:flex-row justify-content-around">
 
-              <div class="portal"><a href="https://github.com/lukasz-nowak44" target="_blank"><i class="icon-github-circled"></i></a></div>
+              <div class="portal"><a href="https://github.com/lukasz-nowak44" target="_blank" aria-label="github page"><i class="icon-github-circled"></i></a></div>
 
-              <div class="portal"><a href="https://pl.spoj.com/users/lowca7/" target="_blank"><img src="assets/icons/spoj-dark.svg" alt="" /></a></div>
+              <div class="portal"><a href="https://pl.spoj.com/users/lowca7/" target="_blank" aria-label="spoj page"><img src="assets/icons/spoj-dark.svg" alt="" /></a></div>
 
-              <div class="portal"><a href="https://www.frontendmentor.io/profile/lukasz-nowak44" target="_blank"><img src="assets/icons/frontendmentor-dark.svg" alt="" /></a></div>
+              <div class="portal"><a href="https://www.frontendmentor.io/profile/lukasz-nowak44" target="_blank" aria-label="frontend mentor page"><img src="assets/icons/frontendmentor-dark.svg" alt="" /></a></div>
 
           </div>
 
@@ -139,7 +151,7 @@
 
         <aside class="container about-me">
 
-          <div class="row interests">
+          <div class="row m-0">
 
             <h2 id="interests-header">About Me</h2>
 
@@ -182,6 +194,7 @@
       <footer class="d-flex justify-content-between z-drawer p-5">
         
         <div class="data">
+
           <h3 id="contact-header">Contact with me:</h3>
 
           <p>
@@ -192,8 +205,7 @@
 
         </div>
 
-        <div class="linkedin"><a href="https://www.linkedin.com/in/%C5%82ukasz-nowak-06ba142a3/?isSelfProfile=true" target="_blank""><i class="icon-linkedin-squared"></i></a></div>
-
+        <div class="linkedin"><a href="https://www.linkedin.com/in/%C5%82ukasz-nowak-06ba142a3/?isSelfProfile=true" target="_blank""><i class="icon-linkedin-squared" aria-label="linkedin"></i></a></div>
 
       </footer>
 

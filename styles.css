@@ -63,11 +63,11 @@ h2 {
 
 .my-photo {
   max-height: 15rem;
-  float: left;
 }
 
 .hero-text {
   max-width: 40ch;
+  text-align: justify;
   font-size: 1.5rem;
 }
 
@@ -95,6 +95,10 @@ article, aside {
   background-color: var(--primary);
 }
 
+.education h2, .skills  h2{
+  color: var(--accent);
+}
+
 .skills-list {
   padding-bottom: 3rem;
   border-bottom: 2px dashed var(--text);
@@ -119,18 +123,21 @@ article, aside {
   outline-offset: 3px;
 }
 
-.interests img {
-  width: 100%;
-  height: auto;
-}
-
 figcaption {
   padding-bottom: 1rem;
+}
+
+.about-me h2 ~ * {
+  padding-left: 0;
 }
 
 footer {
   background-color: var(--primary);
   width: 100%;
+}
+
+footer h3 {
+  color: var(--accent);
 }
 
 a:focus-visible {
@@ -139,6 +146,10 @@ a:focus-visible {
 }
 
 @media (max-width: 36rem) {
+
+  body {
+    font-size: 0.7rem;
+  }
 
   .hero {
     margin-top: 2rem;
@@ -150,7 +161,16 @@ a:focus-visible {
   }
 
   .hero-text {
-   font-size: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .my-photo {
+    max-height: 10rem;
+  }
+
+  article, aside {
+    margin: 5rem 0;
+    padding: 1rem;
   }
 
   footer p {
