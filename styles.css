@@ -205,7 +205,7 @@ a:focus-visible {
   }
 
   .about-me h2 ~ * {
-    padding-right: 0;
+    padding-left: auto;
   }
 
   footer adress {
