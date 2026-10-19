@@ -55,5 +55,5 @@
 }
 
 .icon-mail:before { content: '\e800'; } /* '' */
-.icon-github-circled:before { content: '\f09b'; font-size: 4rem; } /* '' */
-.icon-linkedin-squared:before { content: '\f30c'; font-size: 4rem; } /* '' */
+.icon-github-circled:before { content: '\f09b'; font-size: 4rem; margin: 0;} /* '' */
+.icon-linkedin-squared:before { content: '\f30c'; font-size: 4rem; margin: 0;} /* '' */
