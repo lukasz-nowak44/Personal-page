@@ -1,4 +1,5 @@
 :root {
+  color-scheme: dark; 
   --primary: #030164;
   --secondary: #363199;
   --accent: #2D7495;
@@ -27,9 +28,13 @@ li ul li {
   padding-bottom: 0.2rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   background-color: var(--secondary);
-  font-size: 100%;
+  font-size: 1rem;
   line-height: 1.5;
   color: var(--text);
   font-family: "Open Sans", sans-serif;
@@ -47,9 +52,8 @@ body {
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 1.2rem + 4vw, 3rem);
 }
-
 
 h2 {
   font-weight: 700;
@@ -66,7 +70,6 @@ h2 {
 }
 
 .hero-text {
-  max-width: 40ch;
   text-align: justify;
   font-size: 1.5rem;
 }
@@ -77,12 +80,17 @@ nav {
 }
 
 .nav-link {
-  color: var(--primary);
+  color: #fff;
+  font-weight: 600; 
 }
 
 .nav-link.active, .nav-link:hover, .nav-link:focus-visible {
   background-color: var(--primary); 
   color: var(--text);
+}
+
+.btn-icon:hover {
+  background-color: var(--secondary);     
 }
 
 article, aside {
@@ -139,28 +147,52 @@ footer h3 {
   color: var(--accent);
 }
 
+.data a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.data a:hover {
+  color: var(--text);
+}
+
 a:focus-visible {
   outline: 3px solid var(--text);
   outline-offset: 3px;
 }
 
-@media (max-width: 36rem) {
+@media (max-width: 47.9375rem) {
 
   body {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    margin-top: 3rem;
+  }
+
+  .hero-text {
+    font-size: inherit;
+  }
+
+  .btn-icon, .btn-close {
+    display: flex;
+  }
+
+  nav {
+    height: fit-content;
+    justify-content: center;
+    box-shadow:  1px 1px 10px 0px var(--primary);
+    border-radius: 0 0 15% 0;
+  }
+
+  dialog {
+    background-color: var(--accent);
   }
 
   .hero {
     margin-top: 2rem;
     margin-bottom: 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  .hero-text {
-    font-size: 0.8rem;
   }
 
   .my-photo {
@@ -170,6 +202,10 @@ a:focus-visible {
   article, aside {
     margin: 5rem 0;
     padding: 1rem;
+  }
+
+  .about-me h2 ~ * {
+    padding-right: 0;
   }
 
   footer p {

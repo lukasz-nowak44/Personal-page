@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark">
+
   <title>Łukasz Nowak personal site</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,8 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="assets/fontello-fb96b91e/css/fontello.css" />
-  <link rel="stylesheet" href="styles.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" />
 
 </head>
 
@@ -21,24 +23,32 @@
 
     <div class="row">
 
-      <div class="hero offset-3 md:offset-2 col-9 md:col-10 align-center d-grid lg:grid-cols-2 place-items-center gap-5">
+      <div class="hero md:offset-2 md:col-10 align-center d-grid lg:grid-cols-2 place-items-center gap-5">
 
         <header class="grid-cols-fill" id="home">
-          <h1 class="text-center mb-8">Welcome on my page! I'm <strong>Łukasz Nowak</strong></h1>
+          <h1 class="text-center mb-8">Welcome to my page! I'm <strong>Łukasz Nowak</strong></h1>
         </header>
 
-        <img class="img-fluid my-photo mb-5"  src="assets/myPhoto.jpeg" alt="" />
+        <img class="img-fluid my-photo mb-5"  src="assets/myPhoto.jpeg" alt="Portrait of Łukasz Nowak" />
 
-        <p class="hero-text p-5 lg:me-8"> I am the chemist, who gained the experience in logistic, then in team management. Over the last two years my profession was organization work in one logistic departament. During this time I improved a lot of things in our work. At this moment of my life I would like to try new challenges as developer. </p>
+        <p class="hero-text p-5 lg:me-8"> I am the chemist, who gained the experience in logistic, then in team management. Over the last two years my profession was organization work in one logistic deparatament. During this time I improved a lot of things in our work. At this moment of my life I would like to try new challenges as developer. </p>
 
       </div>
   
-      <nav class="navbar nav col-3 md:col-2 fixed-top">
+      <nav class="navbar md:navbar-expand col-2 fixed-top" >
 
-        <ul class="nav d-flex flex-column">
+        <button class="btn-icon navbar-toggler d-none" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDrawer" aria-controls="navbarDrawer" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon" aria-hidden="true"></span>
+       </button>
+
+       <dialog class="md:drawer drawer-start h-fit" tabindex="-1" id="navbarDrawer" aria-labelledby="navbarDrawerLabel">
+
+        <button type="button" class="btn-close d-none ms-auto" data-bs-dismiss="drawer" aria-label="Close"></button>
+
+        <ul class="navbar-nav d-flex flex-column" id="navigation">
 
           <li class="nav-item">
-            <a class="nav-link" href="#home" aria-label="Home"">Home</a>
+            <a class="nav-link" href="#home" aria-label="Home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#education-header" aria-label="Education">Education</a>
@@ -57,10 +67,12 @@
           </li>
 
         </ul>
+       
+       </dialog>
 
       </nav>
 
-      <main class="col-9 md:col-10 offset-3 md:offset-2">
+      <main class="md:col-10 md:offset-2">
 
         <article class="education">
 
@@ -96,10 +108,8 @@
               <ul>
                 <li><i>organization of daily work</i></li>
                 <li><i>achievement of daily goals</i></li>
-                <li><i>searching for improvements and calculating savings</i></li>
                 <li><i>reporting and presenting results from previous day</i></li>
                 <li><i>resolving current problems</i></li>
-                <li><i>scheduling employees' days off and accounting their working time</i></li>
               </ul>
             </li>
 
@@ -117,7 +127,7 @@
               <strong>Dealer Support Hotline Representative</strong>  <br />
               Company name: Orange Poland</li>
 
-            <li>08/2015 - 09/2015: <strong>Warehause Employee</strong> <br />
+            <li>08/2015 - 09/2015: <strong>Warehouse Employee</strong> <br />
             Company name: Amazon Fulfillment Poland sp. z o.o.</li>  
 
           </ul>
@@ -129,7 +139,7 @@
           <h2 id="skills-header">Skills</h2>
 
           <ul class="skills-list">
-            <li>Foreign Languagues: English intermediate</li>
+            <li>Foreign Languages: English intermediate</li>
             <li>Driving licence: Category B</li>
             <li>Knowledge of laboratory techniques</li>
             <li>Proficiency in using Windows-based software, particularly the Microsoft Office suite</li>
@@ -160,30 +170,30 @@
 
             <div class="col-12 md:col-6">
               <figure>
-              <img src="./assets/mountains.jpg" class="img-fluid img-thumbnail" alt="the photo from mountain" />
+                <img src="./assets/mountains.jpg" class="img-fluid img-thumbnail" alt="the photo from mountain" />
+                <figcaption>Trekking in mountains</figcaption>
               </figure>
-              <figcaption>Trekking in mountains</figcaption>
             </div>
 
             <div class="col-12 md:col-6">
               <figure>
-              <img src="assets/aqua.jpg" class="img-fluid img-thumbnail" alt="small aquarium with green plants" /> 
+                <img src="assets/aqua.jpg" class="img-fluid img-thumbnail" alt="small aquarium with green plants" /> 
+                <figcaption>Aquaristics</figcaption>
               </figure>
-              <figcaption>Aquaristics</figcaption>
             </div>
 
             <div class="col-12 md:col-6">
               <figure>
-              <img src="assets/snowboard.jpg" class="img-fluid img-thumbnail" alt="Me on snowboard" />
+                <img src="assets/snowboard.jpg" class="img-fluid img-thumbnail" alt="Me on snowboard" />
+                <figcaption>Snowboarding and skiing </figcaption>
               </figure>
-              <figcaption>Snowboarding and skiing </figcaption>
             </div>
 
             <div class="col-12 md:col-6">
               <figure>
-              <img src="assets/moon.jpg" class="img-fluid img-thumbnail" alt="The moon photo made with telescope help" /> 
+                <img src="assets/moon.jpg" class="img-fluid img-thumbnail" alt="The moon photo made with telescope help" /> 
+                <figcaption>Astronomy</figcaption>
               </figure>
-              <figcaption>Astronomy</figcaption>
             </div>
 
           </div>
@@ -196,23 +206,25 @@
         
         <div class="data">
 
-          <h3 id="contact-header">Contact with me:</h3>
+          <h3 id="contact-header">Contact me:</h3>
 
-          <p>
-            adress: ul. Bursztynowa 4, 62-200 Gniezno<br />
-            phone number: +48 663 356 626 <br />
-            <i class=" icon-mail"></i> adress: lukasz.nowak.programista@gmail.com <br />
-          </p>
+          <adress>
+            city: Gniezno<br />
+            phone number: <a href="tel:+48663356626">+48 663 356 626 </a><br />
+            <i class=" icon-mail"></i> address: <a href="mailto:lukasz.nowak.programista@gmail.com">lukasz.nowak.programista@gmail.com</a> <br />
+          </adress>
 
         </div>
 
-        <div class="linkedin"><a href="https://www.linkedin.com/in/%C5%82ukasz-nowak-06ba142a3/?isSelfProfile=true" target="_blank""><i class="icon-linkedin-squared" aria-label="linkedin"></i></a></div>
+        <div class="linkedin"><a href="https://www.linkedin.com/in/%C5%82ukasz-nowak-06ba142a3/?isSelfProfile=true" target="_blank"><i class="icon-linkedin-squared" aria-label="linkedin"></i></a></div>
 
       </footer>
 
     </div>
 
   </div>
+
+  <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
 
 </body>
 </html>
